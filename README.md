@@ -10,7 +10,7 @@
 ```html
 <script src="jquery.areaselector.js"></script>
 ```
-
+> 
 ###使用
 > 根据需求填写级别，最多三级。
 > 
