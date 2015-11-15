@@ -5,7 +5,9 @@
 ## 介绍
 
 ###引入
+```html
 <script src="jquery.areaselector.js"></script>
+```
 
 ###使用
 ```javascript
