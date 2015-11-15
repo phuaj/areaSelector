@@ -22,7 +22,7 @@
 > 
 ```javascript
 $(document).ready(function() {
-	$(document).areaSelector({
+	$('#area-selector').areaSelector({
 		id: ['#province', '#city', '#county'],
 		text: ['省份', '城市', '区县'],
 		after: function(data){}
