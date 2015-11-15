@@ -1,5 +1,4 @@
 # areaSelector
-=======
 中国城市三级联动选择器 jQuery版
 
 版本 1.0.0
