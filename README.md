@@ -1,15 +1,25 @@
 # areaSelector
-中国三级城市联动选择器 jQuery版
-版本 1.0.0
+> 中国三级城市联动选择器 jQuery版
+>
+> 版本 1.0.0
 
 ## 介绍
-
+> 原js版为 area.js，作者不详！由于原版不满足需求，所以自己动手改了一下，并做了简单封装。
+> 
 ###引入
 ```html
 <script src="jquery.areaselector.js"></script>
 ```
 
 ###使用
+> 可根据自身需求填写级别，最多三级。
+> 
+```html
+<select id="province" name="province"></select>
+<select id="city" name="city" ></select>
+<select id="county" name="county" ></select>
+```
+
 ```javascript
 $(document).ready(function() {
 	$(document).areaSelector({
