@@ -12,14 +12,14 @@
 ```
 
 ###使用
-> 可根据自身需求填写级别，最多三级。
+> 根据需求填写级别，最多三级。
 > 
 ```html
 <select id="province" name="province"></select>
 <select id="city" name="city" ></select>
 <select id="county" name="county" ></select>
 ```
-
+> 
 ```javascript
 $(document).ready(function() {
 	$(document).areaSelector({
