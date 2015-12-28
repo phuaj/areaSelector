@@ -1,5 +1,5 @@
 ﻿/*
- * jQuery areaSelector v1.0.0
+ * jQuery areaSelector v1.0.1
  * Author: Huajie
  */
 if (typeof Object.create !== "function") {
