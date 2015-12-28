@@ -428,13 +428,21 @@ if (typeof Object.create !== "function") {
 				me.options.areaId+=("_"+($(me.options.id[i]).get(0).selectedIndex-1));
 			};
 			var $select=$(me.options.id[v]);
+			var defaultValue = '';
+			if ( $(me.options.id[v]).attr("attr-value") ) {
+				var defaultValue = $(me.options.id[v]).attr("attr-value");
+			};
 			$select.children().remove();
 			$select.append('<option value="'+ me.options.text[v] +'">'+ me.options.text[v] +'</option>');
 			if(v && $(me.options.id[v-1]).get(0).selectedIndex>0 || !v){
 				if(ad.Exists(me.options.areaId)){
 					ar = ad.area[me.options.areaId];
 					for(i=0;i<ar.length;i++){
-						$select.append('<option value="'+ ar[i] +'">'+ ar[i] +'</option>');
+						if ( defaultValue ==  ar[i] || ar.length == 1 ) {
+							$select.append('<option value="'+ ar[i] +'" selected="selected">'+ ar[i] +'</option>');
+						}else {
+							$select.append('<option value="'+ ar[i] +'">'+ ar[i] +'</option>');
+						};
 					}
 					if (me.options.id[2]) {
 						$select.get(0).selectedIndex=0;
